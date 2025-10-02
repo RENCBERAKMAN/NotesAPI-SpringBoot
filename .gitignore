@@ -1,0 +1,68 @@
+# ===========================
+# General
+# ===========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+*.class
+
+# ===========================
+# Maven / Gradle
+# ===========================
+/target/
+/build/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# Eclipse / STS
+# ===========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ===========================
+# IntelliJ IDEA
+# ===========================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ===========================
+# NetBeans
+# ===========================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ===========================
+# VS Code
+# ===========================
+.vscode/
+
+# ===========================
+# Logs and temporary files
+# ===========================
+*.log
+*.tmp
+*.bak
+
+# ===========================
+# OS specific
+# ===========================
+Thumbs.db
+Desktop.ini
+.DS_Store
