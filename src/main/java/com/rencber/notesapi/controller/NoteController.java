@@ -1,6 +1,8 @@
 package com.rencber.notesapi.controller;
 import com.rencber.notesapi.model.Note;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -32,5 +34,13 @@ public class NoteController {
         //
         //Hafizadaki notlari donduruyoruz.
         return  notes;
+    }
+
+    //Post istegi: /notes -> yeni not ekler
+    @PostMapping("/notes")
+    public Note addNote(@RequestBody Note note) {
+        //@RequestBody -> gelen json u otomatik olarak Note nesenesine cevirir.
+        notes.add(note);//notu listete ekler
+        return note;//eklenen notu geri döner (basarili oldugunu göstermek icin
     }
 }
